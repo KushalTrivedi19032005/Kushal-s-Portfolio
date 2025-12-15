@@ -233,6 +233,77 @@
         transform: translateY(-3px);
       }
 
+      /* Light mode styles */
+      body.light-mode {
+        background-color: #fff;
+        color: #000;
+      }
+
+      body.light-mode nav,
+      body.light-mode .theme-toggle,
+      body.light-mode .nav-links a {
+        color: #000;
+      }
+
+      body.light-mode .theme-toggle {
+        border-color: #000;
+      }
+
+      body.light-mode .sun-icon circle,
+      body.light-mode .sun-icon line {
+        fill: #000;
+        stroke: #000;
+      }
+
+      body.light-mode .paper-card {
+        background-color: #f5f5f5;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      body.light-mode .paper-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      body.light-mode .research-intro {
+        color: #555;
+      }
+
+      body.light-mode .research-subtitle {
+        color: #666;
+      }
+
+      body.light-mode .paper-meta {
+        color: #555;
+      }
+
+      body.light-mode .chatbot-button {
+        background-color: #5a7a6f;
+        color: #fff;
+      }
+
+      body.light-mode .chatbot-button:hover {
+        background-color: #6a8a7f;
+      }
+
+      body.light-mode .scroll-top {
+        border-color: #000;
+        color: #000;
+      }
+
+      body.light-mode .sun-icon {
+        display: none;
+      }
+
+      .moon-icon {
+        display: none;
+        width: 24px;
+        height: 24px;
+      }
+
+      body.light-mode .moon-icon {
+        display: block;
+      }
+
       /* Update existing @media (max-width: 968px) with these additions */
 @media (max-width: 968px) {
   .theme-toggle {
@@ -394,73 +465,4 @@
   }
 }
 
-      /* Light mode styles */
-      body.light-mode {
-        background-color: #fff;
-        color: #000;
-      }
-
-      body.light-mode nav,
-      body.light-mode .theme-toggle,
-      body.light-mode .nav-links a {
-        color: #000;
-      }
-
-      body.light-mode .theme-toggle {
-        border-color: #000;
-      }
-
-      body.light-mode .sun-icon circle,
-      body.light-mode .sun-icon line {
-        fill: #000;
-        stroke: #000;
-      }
-
-      body.light-mode .paper-card {
-        background-color: #f5f5f5;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      body.light-mode .paper-card:hover {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-      }
-
-      body.light-mode .research-intro {
-        color: #555;
-      }
-
-      body.light-mode .research-subtitle {
-        color: #666;
-      }
-
-      body.light-mode .paper-meta {
-        color: #555;
-      }
-
-      body.light-mode .chatbot-button {
-        background-color: #5a7a6f;
-        color: #fff;
-      }
-
-      body.light-mode .chatbot-button:hover {
-        background-color: #6a8a7f;
-      }
-
-      body.light-mode .scroll-top {
-        border-color: #000;
-        color: #000;
-      }
-
-      body.light-mode .sun-icon {
-        display: none;
-      }
-
-      .moon-icon {
-        display: none;
-        width: 24px;
-        height: 24px;
-      }
-
-      body.light-mode .moon-icon {
-        display: block;
-      }
+      

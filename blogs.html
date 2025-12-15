@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience - Kushal</title>
-    <link rel="stylesheet" href="exp.css" />
+    <title>Blogs - Kushal</title>
+    <link rel="stylesheet" href="blogs.css" />
   </head>
   <body>
     <nav>
@@ -44,42 +44,54 @@
     </nav>
 
     <main>
-      <h1 class="page-title">Experience</h1>
+      <h1 class="page-title">Blogs</h1>
 
-      <div class="timeline-container">
-        <div class="timeline-line"></div>
-
-        <div class="experience-item">
-          <div class="timeline-dot"></div>
-          <div class="date">May, 2025 - July, 2025</div>
-          <div class="position">Summer Research Fellow</div>
-          <div class="company">
-            Indian Institute of Technology (IIT), Kharagpur
-          </div>
-          <div class="research-project">
-            <strong>Research Project:</strong>
-            <span class="research-title"
-              >Transformer-Based Multichannel EEG Artifact Removal</span
-            >
+      <div class="blogs-container">
+        <div class="blogs-card">
+          <div class="blogs-content">
+            <div class="blogs-title">
+              <span class="blogs-type">
+                <a
+                  href="https://drive.google.com/file/d/1fdigo_dEYjXwMMUR1u10AvtMQg6y0C1u/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >[Blog Link]</a
+                >
+              </span>
+              The What and Why of Research (Page 50)
+            </div>
           </div>
         </div>
 
-        <div class="experience-item">
-          <div class="timeline-dot"></div>
-          <div class="date">September, 2024 - December, 2024</div>
-          <div class="position">Machine Learning Research Intern</div>
-          <div class="company">MakDesign</div>
-          <div class="research-project">
-            <strong>Research Project:</strong>
-            <span class="research-title"
-              >Precision Agriculture using Deep Learning</span
-            >
+        <div class="blogs-card">
+          <div class="blogs-content">
+            <div class="blogs-title">
+              <span class="blogs-type">
+                <a
+                  href="https://medium.com/@kushal.trivedi.2005/writing-my-first-research-paper-87f2efc487c6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >[Blog Link]</a
+                >
+              </span>
+              Writing My First Research Paper
+            </div>
           </div>
         </div>
       </div>
 
       <button class="chatbot-button">Ask the chatbot anything about me!</button>
     </main>
+
+    <footer>
+      <div
+        class="scroll-top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      >
+        ↑
+      </div>
+    </footer>
+
     <script>
       const themeToggle = document.querySelector(".theme-toggle");
       const body = document.body;
