@@ -89,32 +89,35 @@
          </p>
       </section>
 
-
       <script>
-         const themeToggle = document.querySelector('.theme-toggle');
-         const body = document.body;
-         
-         // Check if user has a saved theme preference
-         const savedTheme = localStorage.getItem('theme');
-         if (savedTheme === 'light') {
-             body.classList.add('light-mode');
-         }
-         
-         themeToggle.addEventListener('click', () => {
-             body.classList.toggle('light-mode');
-             
-             // Save preference
-             if (body.classList.contains('light-mode')) {
-                 localStorage.setItem('theme', 'light');
-             } else {
-                 localStorage.setItem('theme', 'dark');
-             }
-         });
-      </script>
+  const themeToggle = document.querySelector('.theme-toggle');
+  const body = document.body;
+  
+  // Check if user has a saved theme preference
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+      body.classList.add('light-mode');
+  }
+  
+  themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      
+      // Save preference
+      if (body.classList.contains('light-mode')) {
+          localStorage.setItem('theme', 'light');
+      } else {
+          localStorage.setItem('theme', 'dark');
+      }
+  });
+</script>
 
-      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-      <script>
+<script>
+  // ⭐ MOVE SUPABASE CONFIG HERE
+  const SUPABASE_URL = 'https://kkpcllsjkljoolfdrbyf.supabase.co';
+  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrcGNsbHNqa2xqb29sZmRyYnlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU4ODMyMjgsImV4cCI6MjA4MTQ1OTIyOH0.VxnoULE-Mto2H8TohgYd2fyCJMWWYBBU4IJi5o7wQl8';
+
   const map = L.map("visitor-map").setView([20, 0], 2);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -135,7 +138,7 @@
         return;
       }
 
-      const { country, latitude, longitude } = data;
+      const { country, latitude, longitude, ip } = data;
 
       // ---- Add marker ----
       L.circleMarker([latitude, longitude], {
@@ -149,26 +152,51 @@
       .bindPopup(`<strong>${country}</strong>`)
       .openPopup();
 
-      // ---- Unique visit tracking (browser-level) ----
-      const visited = localStorage.getItem("visited");
+      // ---- Save to Supabase ----
+      await fetch(`${SUPABASE_URL}/rest/v1/visitors`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': SUPABASE_KEY,
+          'Authorization': `Bearer ${SUPABASE_KEY}`,
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({ 
+          country, 
+          latitude, 
+          longitude,
+          ip_address: ip
+        })
+      });
 
-      let count = Number(localStorage.getItem("visitorCount")) || 0;
-
-      if (!visited) {
-        count += 1;
-        localStorage.setItem("visitorCount", count);
-        localStorage.setItem("visited", "true");
-      }
-
+      // ---- Get total visitor count ----
+      const countRes = await fetch(
+        `${SUPABASE_URL}/rest/v1/visitors?select=count`,
+        {
+          headers: {
+            'apikey': SUPABASE_KEY,
+            'Authorization': `Bearer ${SUPABASE_KEY}`,
+            'Prefer': 'count=exact'
+          }
+        }
+      );
+      
+      const countHeader = countRes.headers.get('content-range');
+      const count = countHeader ? countHeader.split('/')[1] : '0';
+      
       document.getElementById("visitorCount").textContent = count;
 
     } catch (err) {
       console.error("Location error:", err);
+      document.getElementById("visitorCount").textContent = "Error";
     }
   }
 
   fetchVisitorLocation();
 </script>
+
+
+      
 
 <script type="text/javascript">
         (function(d, t) {
