@@ -18,6 +18,24 @@
          padding: 2rem 4rem;
          position: relative;
          }
+
+         @media (max-width: 768px) {
+  .greeting {
+    font-size: 2rem;
+  }
+
+  .info-item {
+    font-size: 1rem;
+  }
+
+  .chatbot-button {
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+}
+
+
          .theme-toggle {
          position: absolute;
          left: 4rem;
@@ -264,6 +282,21 @@
     margin: 3rem auto 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .theme-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 
 /* Mobile responsive */
 @media (max-width: 768px) {

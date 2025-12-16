@@ -197,6 +197,25 @@
         border: none;
       }
 
+      .linko svg {
+  color: #000000; /* Black in light mode */
+  transition: color 0.3s ease;
+}
+
+.light-mode .linko svg {
+  color: #000000; /* Black in light mode */
+}
+
+body:not(.light-mode) .linko svg,
+body.dark-mode .linko svg {
+  color: #ffffff; /* White in dark mode */
+}
+
+/* Optional: hover effect */
+.linko a:hover svg {
+  opacity: 0.7;
+}
+
       .chatbot-button:focus {
         outline: none;
       }
