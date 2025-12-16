@@ -78,6 +78,7 @@
                <span class="icon">🎓</span>Bachelor's of Technology in Information Technology
             </div>
             <button class="chatbot-button">Ask the chatbot anything about me!</button>
+            
          </div>
       </main>
 
@@ -169,7 +170,32 @@
   fetchVisitorLocation();
 </script>
 
-
+<script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '6940f7dc7a9aa90a18c2fd09' }, 
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production',
+                launcher: {
+                  enabled: false   
+               }
+              });
+              
+              // Connect custom button
+              const customButton = document.querySelector('.chatbot-button');
+              if (customButton) {
+                customButton.addEventListener('click', function() {
+                  window.voiceflow.chat.open();
+                });
+              }
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
 
    </body>
 </html>

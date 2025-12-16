@@ -265,6 +265,23 @@
   }
 }
 
+/* Mobile responsive */
+@media (max-width: 768px) {
+    #voiceflow-chat iframe {
+        width: calc(100vw - 40px) !important;
+        right: 20px !important;
+        height: 70vh !important;
+        bottom: 90px !important;
+    }
+    
+    .chatbot-button {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        bottom: 20px;
+    }
+}
+
 @media (max-width: 640px) {
   .theme-toggle {
     left: 1rem;
@@ -465,6 +482,7 @@ body.light-mode #visitor-map {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
+
 /* Mobile */
 @media (max-width: 640px) {
   #visitor-map {
@@ -474,6 +492,14 @@ body.light-mode #visitor-map {
   .visitor-title {
     font-size: 1.6rem;
   }
+}
+
+.vfrc-launcher,
+.vfrc-launcher-button,
+.vfrc-launcher-container {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
          

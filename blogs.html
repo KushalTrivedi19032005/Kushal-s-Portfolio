@@ -55,7 +55,7 @@
                   href="https://drive.google.com/file/d/1fdigo_dEYjXwMMUR1u10AvtMQg6y0C1u/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >[Blog Link]</a
+                  >Blog Link</a
                 >
               </span>
               The What and Why of Research (Page 50)
@@ -71,7 +71,7 @@
                   href="https://medium.com/@kushal.trivedi.2005/writing-my-first-research-paper-87f2efc487c6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >[Blog Link]</a
+                  >Blog Link</a
                 >
               </span>
               Writing My First Research Paper
@@ -112,6 +112,34 @@
           localStorage.setItem("theme", "dark");
         }
       });
+    </script>
+
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: "6940f7dc7a9aa90a18c2fd09" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+            launcher: {
+              enabled: false,
+            },
+          });
+
+          // Connect custom button
+          const customButton = document.querySelector(".chatbot-button");
+          if (customButton) {
+            customButton.addEventListener("click", function () {
+              window.voiceflow.chat.open();
+            });
+          }
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
     </script>
   </body>
 </html>

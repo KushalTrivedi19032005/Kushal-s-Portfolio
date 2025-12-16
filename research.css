@@ -162,7 +162,7 @@
         margin-bottom: 0.8rem;
       }
 
-      .paper-type {
+      /* .paper-type {
         display: inline-block;
         background-color: #5a7a6f;
         color: #fff;
@@ -179,7 +179,7 @@
       .paper-type a:active {
         color: white;
         text-decoration: none;
-    }
+    } */
 
 
       .chatbot-button {
@@ -232,6 +232,7 @@
         background-color: rgba(255, 255, 255, 0.1);
         transform: translateY(-3px);
       }
+
 
       /* Update existing @media (max-width: 968px) with these additions */
 @media (max-width: 968px) {
@@ -298,6 +299,8 @@
   }
 }
 
+
+
 /* Update existing @media (max-width: 640px) with these additions */
 @media (max-width: 640px) {
   .theme-toggle {
@@ -352,10 +355,10 @@
     height: 180px;
   }
   
-  .paper-type {
+  /* .paper-type {
     font-size: 0.85rem;
     padding: 0.25rem 0.7rem;
-  }
+  } */
   
   main {
     padding: 1.5rem 1rem 4rem 1rem;
