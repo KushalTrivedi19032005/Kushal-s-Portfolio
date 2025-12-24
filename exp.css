@@ -1,10 +1,10 @@
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      body {
+body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, sans-serif;
         background-color: #000;
@@ -19,6 +19,9 @@
         justify-content: center;
         align-items: center;
         padding: 2rem 4rem;
+        position: relative;
+        width: 100%;
+        margin-left: -0.5rem;
       }
 
       .theme-toggle {
@@ -34,41 +37,44 @@
         cursor: progress;
         transition: all 0.3s ease;
       }
-      .theme-toggle:hover {
-        transform: rotate(180deg);
-        background-color: rgba(255, 255, 255, 0.1);
-      }
-      .sun-icon {
-        width: 24px;
-        height: 24px;
-      }
+.theme-toggle:hover {
+  transform: rotate(180deg);
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
-      .sun-icon circle {
-        fill: #fff;
-      }
+.sun-icon {
+  width: 24px;
+  height: 24px;
+}
 
-      .sun-icon line {
-        stroke: #fff;
-        stroke-width: 2;
-        stroke-linecap: round;
-      }
+.sun-icon circle {
+  fill: #fff;
+}
 
-      .nav-links {
-        display: flex;
-        gap: 2rem;
-        list-style: none;
-      }
-      .nav-links a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.5rem;
-        transition: opacity 0.3s ease;
-      }
-      .nav-links a:hover {
-        opacity: 0.7;
-      }
+.sun-icon line {
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
 
-      main {
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+main {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -158,39 +164,29 @@
       }
 
       .chatbot-button {
-        position: fixed;
-    bottom: 30px;
-    background-color: #5a7a6f;
-    color: #fff;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    margin-top: 4rem;  /* Changed from 3rem */
-    transition: all 0.3s ease;
-    outline: none;
-    border: none;
-    right: 594px;
+  position: fixed;
+  bottom: 30px;
+  background-color: #5a7a6f;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-top: 4rem;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+  left: 616px;
 }
-
-@media (max-width: 768px) {
-  .chatbot-button {
-    bottom: 16px;
-    right: 16px;
-    padding: 0.75rem 1.4rem;
-    font-size: 0.9rem;
-  }
-}
-
 
 .chatbot-button:focus {
-    outline: none;
+  outline: none;
 }
 
 .chatbot-button:hover {
-    background-color: #6a8a7f;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(90, 112, 111, 0.4);
+  background-color: #6a8a7f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(90, 112, 111, 0.4);
 }
 
       footer {
@@ -219,9 +215,7 @@
         transform: translateY(-3px);
       }
 
-      /* Add/update these media queries in your exp.css */
-
-/* Update existing @media (max-width: 968px) with these additions */
+      /* Update existing @media (max-width: 968px) with these additions */
 @media (max-width: 968px) {
   .theme-toggle {
     left: 1.5rem;
@@ -231,6 +225,9 @@
   
   nav {
     padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    margin-right: -0.7rem;
+    margin-left: 0.45rem;
   }
 
   .nav-links {
@@ -259,7 +256,6 @@
   
   .chatbot-button {
     padding: 0.8rem 2rem;
-    font-size: 1rem;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -267,6 +263,20 @@
   
   footer {
     padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .theme-toggle svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -288,14 +298,18 @@
   }
 
   .nav-links {
-    gap: 0.8rem;
+    gap: 0.4rem;
   }
   
   .nav-links a {
     font-size: 1rem;
   }
 
-  nav,
+  nav {
+    padding: 1rem;
+    margin-left: 0.35rem;
+  }
+
   footer {
     padding: 1rem;
   }
@@ -334,7 +348,6 @@
   
   .chatbot-button {
     padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
   }
 }
 
@@ -342,7 +355,6 @@
 @media (max-width: 380px) {
   .nav-links a {
     font-size: 0.9rem;
-    gap: 0.5rem;
   }
   
   .page-title {
@@ -356,6 +368,11 @@
   .company, .date {
     font-size: 0.95rem;
   }
+
+  .theme-toggle {
+  width: 30px;
+  height: 30px;
+}
 }
 
 

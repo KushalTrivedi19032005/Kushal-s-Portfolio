@@ -19,6 +19,7 @@
         justify-content: center;
         align-items: center;
         padding: 2rem 4rem;
+        position: relative;
       }
 
       .theme-toggle {
@@ -189,7 +190,7 @@
         color: #fff;
         padding: 1rem 2.5rem;
         border-radius: 50px;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         cursor: pointer;
         margin-top: 4rem;
         transition: all 0.3s ease;
@@ -333,6 +334,8 @@ body.dark-mode .linko svg {
   
   nav {
     padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    margin-right: -0.7rem;
   }
 
   .nav-links {
@@ -377,15 +380,33 @@ body.dark-mode .linko svg {
   
   .chatbot-button {
     padding: 0.8rem 2rem;
-    font-size: 1rem;
-    bottom: 20px;
-    left: 50%;
+    bottom: 39px;
+    left: 48.8%;
     transform: translateX(-50%);
   }
   
   footer {
     padding: 1.5rem 2rem;
   }
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .theme-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .chatbot-button {
+        left: 48.8%;
+        bottom: 39px;
+    }
 }
 
 /* Update existing @media (max-width: 640px) with these additions */
@@ -421,7 +442,10 @@ body.dark-mode .linko svg {
     font-size: 1rem;
   }
 
-  nav,
+  nav {
+    padding: 1rem;
+  }
+
   footer {
     padding: 1rem;
   }
@@ -453,7 +477,8 @@ body.dark-mode .linko svg {
   
   .chatbot-button {
     padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
+    left: 48.8%;
+    bottom: 39px;
   }
 }
 
@@ -482,6 +507,12 @@ body.dark-mode .linko svg {
   .paper-image {
     height: 160px;
   }
+
+  .theme-toggle {
+    width: 30px;
+    height: 30px;
+  }
 }
+
 
       
