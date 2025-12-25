@@ -35,3 +35,5 @@ To visualize the global reach of my portfolio, I integrated **Leaflet.js**.
 - **Structure:** HTML
 - **Styling:** CSS
 - **Map Engine:** [Leaflet.js](https://leafletjs.com/)
+
+Developed with ❤️ by Kushal
