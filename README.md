@@ -1,10 +1,55 @@
-Kushal's Personal Portfolio
+# 👨‍💻 Kushal's Personal Portfolio
 
-Welcome to my first website, which is my personal portfolio, built using HTML, CSS and a little bit of Javascript.
+Welcome to my first web project! This portfolio is a central hub for my professional experience, academic research, and technical creations. 
 
-Pages:
-1. Home Page: Containing my role, number of unique visitors (using Leaflet.js), and a chatbot (whom I call Kwil!) to answer questions about me.
-2. Experience Page
-3. Research Page: Showing all of my existing research papers and technical reports.
-4. Projects: List of technical projects I've built in the past.
-5. Blogs: Showcases some of the articles I've written, which is my past-time.
+[Live Demo Link](your-link-here) | [Report Bug](your-link-here)
+
+---
+
+## 🚀 Project Overview
+
+This portfolio was built to provide a comprehensive look at my work while experimenting with interactive elements like mapping and conversational UI.
+
+### 📂 The Pages
+* **🏠 Home:** The landing page featuring my current role and core identity.
+* **💼 Experience:** A detailed timeline of my professional career.
+* **🔬 Research:** A repository of my existing research papers and technical reports.
+* **🛠️ Projects:** A showcase of technical builds and software solutions.
+* **✍️ Blogs:** A space where I document my thoughts and past-time writing.
+
+---
+
+## 🌟 Unique Features
+
+### 🤖 Kwil the Chatbot
+I developed **Kwil**, a custom chatbot integrated into the Home page. Kwil is designed to act as my virtual assistant, answering common questions about my skills, background, and interests in real-time.
+
+### 🗺️ Visitor Analytics (Leaflet.js)
+To visualize the global reach of my portfolio, I integrated **Leaflet.js**. This tool tracks and displays unique visitors on an interactive map, turning simple traffic data into a visual experience.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Structure:** HTML5
+- **Styling:** CSS3 (Custom animations & responsive design)
+- **Logic:** JavaScript (ES6+)
+- **Map Engine:** [Leaflet.js](https://leafletjs.com/)
+
+---
+
+## 📸 Preview
+
+| Desktop View | Mobile View |
+| :--- | :--- |
+| ![Desktop Screenshot](https://via.placeholder.com/400x250?text=Home+Page+Preview) | ![Mobile Screenshot](https://via.placeholder.com/200x350?text=Mobile+Preview) |
+
+---
+
+## 🛠️ Installation & Setup
+
+If you'd like to run this project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
