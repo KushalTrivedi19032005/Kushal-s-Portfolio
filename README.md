@@ -19,9 +19,10 @@ This portfolio was built to provide a comprehensive look at my work while experi
 * **✍️ Blogs:** A space where I document my thoughts and past-time writing.
 
 ---
-### Website Overview
-![Image of the website on Desktop (Dark Mode)](https://github.com/KushalTrivedi19032005/Kushal-s-Portfolio/blob/main/images/desktop_screenshot.png)
-![Image of the website on Mobile (Light Mode)](https://github.com/KushalTrivedi19032005/Kushal-s-Portfolio/blob/main/images/mobile_screenshot.png)
+
+### 🌐 Website Overview
+![Image of the Website on Desktop (Dark Mode)](https://github.com/KushalTrivedi19032005/Kushal-s-Portfolio/blob/main/images/desktop_screenshot.png)
+![Image of the Website on Mobile (Light Mode)](https://github.com/KushalTrivedi19032005/Kushal-s-Portfolio/blob/main/images/mobile_screenshot.jpg)
 
 ---
 
