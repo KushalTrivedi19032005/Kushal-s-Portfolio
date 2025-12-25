@@ -339,7 +339,7 @@ body.dark-mode .linko svg {
 /* Update existing @media (max-width: 640px) with these additions */
 @media (max-width: 640px) {
   .theme-toggle {
-    left: 1rem;
+    left: 0.9rem;
     width: 32px;
     height: 32px;
   }

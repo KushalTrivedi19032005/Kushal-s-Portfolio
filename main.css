@@ -299,6 +299,7 @@
     }
     
     .chatbot-button {
+        padding: 0.8rem 2rem;
         left: 48.8%;
         transform: translateX(-50%);
         right: auto;
@@ -320,7 +321,7 @@
   
   nav {
     padding: 1rem;
-    margin-left: -0.05rem;
+    margin-left: -0.1rem;
   }
   
   .nav-links {

@@ -218,7 +218,7 @@ main {
       /* Update existing @media (max-width: 968px) with these additions */
 @media (max-width: 968px) {
   .theme-toggle {
-    left: 1.5rem;
+    left: 0.5rem;
     width: 35px;
     height: 35px;
   }
@@ -283,7 +283,7 @@ main {
 /* Update existing @media (max-width: 640px) with these additions */
 @media (max-width: 640px) {
   .theme-toggle {
-    left: 1rem;
+    left: 0.55rem;
     width: 32px;
     height: 32px;
   }
