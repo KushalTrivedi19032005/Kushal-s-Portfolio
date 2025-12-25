@@ -301,9 +301,9 @@
     .chatbot-button {
         padding: 0.8rem 2rem;
         left: 48.8%;
-        transform: translateX(-50%);
+        transform: translateX(-52%);
         right: auto;
-        bottom: 39px;
+        bottom: 55px;
     }
 }
 

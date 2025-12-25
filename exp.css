@@ -278,6 +278,21 @@ main {
     width: 18px;
     height: 18px;
   }
+
+  #voiceflow-chat iframe {
+        width: calc(100vw - 40px) !important;
+        right: 20px !important;
+        height: 70vh !important;
+        bottom: 90px !important;
+    }
+    
+    .chatbot-button {
+        padding: 0.8rem 2rem;
+        left: 48.8%;
+        transform: translateX(-50%);
+        right: auto;
+        bottom: 37px;
+    }
 }
 
 /* Update existing @media (max-width: 640px) with these additions */

@@ -278,7 +278,7 @@ body.light-mode .moon-icon {
 /* Update existing @media (max-width: 968px) with these additions */
 @media (max-width: 968px) {
   .theme-toggle {
-    left: 0.5rem;
+    left: 0.55rem;
     width: 35px;
     height: 35px;
   }
@@ -321,9 +321,9 @@ body.light-mode .moon-icon {
   
   .chatbot-button {
     padding: 0.8rem 2rem;
-    bottom: 20px;
+    bottom: 36px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-53%);
   }
   
   footer {

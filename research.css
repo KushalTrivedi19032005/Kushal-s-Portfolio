@@ -310,9 +310,9 @@ body.dark-mode .linko svg {
   
   .chatbot-button {
     padding: 0.8rem 2rem;
-    bottom: 20px;
+    bottom: 46px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-54%);
   }
   
   footer {
