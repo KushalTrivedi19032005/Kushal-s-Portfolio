@@ -20,7 +20,8 @@ This portfolio was built to provide a comprehensive look at my work while experi
 
 ---
 ### Website Overview
-![Alt text](URL or relative path to the image)
+![Image of the website on Desktop (Dark Mode)](https://github.com/KushalTrivedi19032005/Kushal-s-Portfolio/blob/main/images/desktop_screenshot.png)
+![Image of the website on Mobile (Light Mode)](https://github.com/KushalTrivedi19032005/Kushal-s-Portfolio/blob/main/images/mobile_screenshot.png)
 
 ---
 
