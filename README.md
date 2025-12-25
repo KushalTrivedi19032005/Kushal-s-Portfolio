@@ -19,6 +19,10 @@ This portfolio was built to provide a comprehensive look at my work while experi
 * **✍️ Blogs:** A space where I document my thoughts and past-time writing.
 
 ---
+### Website Overview
+![Alt text](URL or relative path to the image)
+
+---
 
 ## 🌟 Unique Features
 
